@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>849069853718-eptbku62pmibj6og7o3907uejgsa2j71.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.849069853718-eptbku62pmibj6og7o3907uejgsa2j71</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBJ_TZSN7I0VJzKBQVM1gYjajZR6_o1pEA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>849069853718</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>VasyaOne.formthotics</string>
+	<key>PROJECT_ID</key>
+	<string>formthotics-b5c78</string>
+	<key>STORAGE_BUCKET</key>
+	<string>formthotics-b5c78.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:849069853718:ios:eff655283deb511ede3937</string>
+</dict>
+</plist>
