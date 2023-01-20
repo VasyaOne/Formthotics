@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
 
 struct ProfileView: View {
     
@@ -13,16 +14,17 @@ struct ProfileView: View {
     @State var isQuitAlertPresented = false
     @State var isAuthViewPresented = false
     
+    @StateObject var viewModel: ProfileViewModel
+    
     var body: some View {
         
         VStack {
             VStack (alignment: .leading) {
                 HStack {
-                    Image("userIcon")
+                    Image(systemName: "person.crop.rectangle.stack")
                         .resizable()
                         .frame(width: 80, height: 80, alignment: .center)
                         .padding()
-                        .background(Color.gray)
                         .clipShape(Circle())
                         .onTapGesture {
                             isAvaAlertPresented.toggle()
@@ -43,20 +45,34 @@ struct ProfileView: View {
                         }
                     
                     VStack (alignment: .leading, spacing: 12){
-                        Text("Иванов Иван Иванович")
+                        TextField("Имя", text: $viewModel.profile.name)
                             .bold()
-                        Text("ООО Рога и копыта")
-                        Text("+7 926 222 33 11")
+                        TextField("Компания", text: $viewModel.profile.compani)
+                        
+                        HStack {
+                            Text("+7")
+                            TextField("Телефон", value: $viewModel.profile.phone, format: .number)
+                        }
                     }
                 }
                 VStack (alignment: .leading){
                     Text("Специальность: ортопед ")
                     Text("Сертификат: 140934 до 2025г ")
-                    Text("Адрес: г.Москва, ул. Гагарина 17а ")
+                    HStack {
+                        Text("Адрес:")
+                        TextField("адрес", text: $viewModel.profile.address)
+                    }
                 }
                 // таблица с заказами
                 List {
-                    Text ("Ваши заказы будут тут!")
+                    if viewModel.orders.count == 0 {
+                        Text ("Ваши заказы будут тут!")
+                    } else {
+                        ForEach (viewModel.orders, id: \.id) { order in
+                            OrderCell(order: order)
+                        }
+                    }
+                    
                 }.listStyle(.plain)
             }
             .padding()
@@ -79,16 +95,29 @@ struct ProfileView: View {
                 }
 
             }
+            
             .padding(.bottom,30)
             .fullScreenCover(isPresented: $isAuthViewPresented) {
                 AuthView()
             }
+        }
+        .onSubmit {
+            viewModel.setProfile()
+        }
+        
+        .onAppear{
+            self.viewModel.getProfile()
+            self.viewModel.getOrders()
         }
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(viewModel: ProfileViewModel(profile: DataUser(id: "",
+                                                                  name: "",
+                                                                  phone: 9262775950,
+                                                                  address: "",
+                                                                  compani: "")))
     }
 }

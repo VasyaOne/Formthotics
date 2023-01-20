@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+enum OrderStatus: String {
+    
+    case new = "Новый"
+    case cooking = "Готовится"
+    case delivery = "Доставляется"
+    case completed = "Выполнен"
+    case cancelled = "Отменен"
+    
+}

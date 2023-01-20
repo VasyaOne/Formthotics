@@ -9,7 +9,16 @@ import SwiftUI
 
 struct NewsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            Image ("logo")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(.horizontal, 60)
+            .padding(.bottom, 150)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Image ("222"))
     }
 }
 

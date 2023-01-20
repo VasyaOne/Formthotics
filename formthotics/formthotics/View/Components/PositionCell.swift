@@ -29,20 +29,19 @@ struct PositionCell: View {
 
 struct PositionCell_Previews: PreviewProvider {
     static var previews: some View {
-        PositionCell(position:
-                        Position(
-                            id: UUID().uuidString,
-                            product:
-                                Product(
-                                    id: UUID().uuidString,
-                                    title: "ГОЛУБЫЕ",
-                                    imageUrl: "12",
-                                    price: 3500,
-                                    discript: "Однослойный ортез",
-                                    layers: 2,
-                                    rigidity: 2,
-                                    age: "Взрослые",
-                                    weight: 50),
-                            count: 3))
+        PositionCell(position: Position(id: UUID().uuidString,
+                                        product:
+                                            Product(
+                                                id: UUID().uuidString,
+                                                title: "ГОЛУБЫЕ",
+                                                imageUrl: "12",
+                                                price: 3500,
+                                                discript: "Однослойный ортез",
+                                                layers: 2,
+                                                rigidity: 2,
+                                                age: "Взрослые",
+                                                weight: 50),
+                                        count: 3))
+       
     }
 }

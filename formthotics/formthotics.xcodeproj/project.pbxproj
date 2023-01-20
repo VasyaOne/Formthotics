@@ -32,6 +32,10 @@
 		FF145EAD29719AB000F345B6 /* MainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF145EAC29719AB000F345B6 /* MainTabBarViewModel.swift */; };
 		FF145EAF2971A2A900F345B6 /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF145EAE2971A2A900F345B6 /* DataUser.swift */; };
 		FF145EB12971A45B00F345B6 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF145EB02971A45B00F345B6 /* DatabaseService.swift */; };
+		FF145ED929784EBD00F345B6 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF145ED829784EBD00F345B6 /* ProfileViewModel.swift */; };
+		FFCE353C2978628A00DE6975 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE353B2978628A00DE6975 /* Order.swift */; };
+		FFF281E029786ACA00D214F5 /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF281DF29786ACA00D214F5 /* OrderStatus.swift */; };
+		FFF281E22979B1A900D214F5 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF281E12979B1A900D214F5 /* OrderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		FF145EAC29719AB000F345B6 /* MainTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewModel.swift; sourceTree = "<group>"; };
 		FF145EAE2971A2A900F345B6 /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		FF145EB02971A45B00F345B6 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		FF145ED829784EBD00F345B6 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		FFCE353B2978628A00DE6975 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		FFF281DF29786ACA00D214F5 /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
+		FFF281E12979B1A900D214F5 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,7 @@
 				FF145E8F296F3AFD00F345B6 /* ProductCell.swift */,
 				FF145E962970465000F345B6 /* ProductDitailView.swift */,
 				FF145E9E297075E000F345B6 /* PositionCell.swift */,
+				FFF281E12979B1A900D214F5 /* OrderCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -143,6 +152,8 @@
 				FF145E8D296F388700F345B6 /* Product.swift */,
 				FF145E9C29706FC500F345B6 /* Position.swift */,
 				FF145EAE2971A2A900F345B6 /* DataUser.swift */,
+				FFCE353B2978628A00DE6975 /* Order.swift */,
+				FFF281DF29786ACA00D214F5 /* OrderStatus.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +165,7 @@
 				FF145EAC29719AB000F345B6 /* MainTabBarViewModel.swift */,
 				FF145E9829704D7300F345B6 /* ProductDitailViewModel.swift */,
 				FF145E9A29706F5500F345B6 /* CartViewModel.swift */,
+				FF145ED829784EBD00F345B6 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -252,14 +264,18 @@
 				FF145E972970465000F345B6 /* ProductDitailView.swift in Sources */,
 				FF145E9F297075E000F345B6 /* PositionCell.swift in Sources */,
 				FF145EB12971A45B00F345B6 /* DatabaseService.swift in Sources */,
+				FFCE353C2978628A00DE6975 /* Order.swift in Sources */,
 				FF145E9B29706F5500F345B6 /* CartViewModel.swift in Sources */,
 				FF145E9929704D7300F345B6 /* ProductDitailViewModel.swift in Sources */,
 				FF145E83296F2CB600F345B6 /* MainTabBar.swift in Sources */,
 				FF145EAF2971A2A900F345B6 /* DataUser.swift in Sources */,
 				FF145E77296F04E000F345B6 /* AuthView.swift in Sources */,
+				FFF281E22979B1A900D214F5 /* OrderCell.swift in Sources */,
 				FF145E89296F36F200F345B6 /* NewsView.swift in Sources */,
 				FF145E75296F04E000F345B6 /* formthoticsApp.swift in Sources */,
+				FFF281E029786ACA00D214F5 /* OrderStatus.swift in Sources */,
 				FF145E90296F3AFD00F345B6 /* ProductCell.swift in Sources */,
+				FF145ED929784EBD00F345B6 /* ProfileViewModel.swift in Sources */,
 				FF145E8B296F372600F345B6 /* ProfileView.swift in Sources */,
 				FF145E94296F48C000F345B6 /* CatalogViewModel.swift in Sources */,
 				FF145E85296F362F00F345B6 /* CatalogView.swift in Sources */,
