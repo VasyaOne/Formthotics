@@ -19,8 +19,13 @@ struct formthoticsApp: App {
         WindowGroup {
             
             if let user = AuthService.shared.currentUser {
-                let viewModel = MainTabBarViewModel(user: user)
-                MainTabBar(viewModel: viewModel)
+                if user.uid == "IBUwHpJYoSfmfVcyZLjVMLZdsh32"{
+                    AdminOrdersView()
+                } else {
+                    let viewModel = MainTabBarViewModel(user: user)
+                    MainTabBar(viewModel: viewModel)
+                }
+                    
             } else {
                 AuthView()
             }

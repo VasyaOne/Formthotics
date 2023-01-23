@@ -36,6 +36,10 @@
 		FFCE353C2978628A00DE6975 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE353B2978628A00DE6975 /* Order.swift */; };
 		FFF281E029786ACA00D214F5 /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF281DF29786ACA00D214F5 /* OrderStatus.swift */; };
 		FFF281E22979B1A900D214F5 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF281E12979B1A900D214F5 /* OrderCell.swift */; };
+		FFFEDF5F297AF7A400DAA52D /* AdminOrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFEDF5E297AF7A400DAA52D /* AdminOrdersView.swift */; };
+		FFFEDF62297AF94E00DAA52D /* AdminOrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFEDF61297AF94E00DAA52D /* AdminOrdersViewModel.swift */; };
+		FFFEDF64297AFD2E00DAA52D /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFEDF63297AFD2E00DAA52D /* OrderView.swift */; };
+		FFFEDF66297AFD5600DAA52D /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFEDF65297AFD5600DAA52D /* OrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,10 @@
 		FFCE353B2978628A00DE6975 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		FFF281DF29786ACA00D214F5 /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
 		FFF281E12979B1A900D214F5 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		FFFEDF5E297AF7A400DAA52D /* AdminOrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminOrdersView.swift; sourceTree = "<group>"; };
+		FFFEDF61297AF94E00DAA52D /* AdminOrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminOrdersViewModel.swift; sourceTree = "<group>"; };
+		FFFEDF63297AFD2E00DAA52D /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		FFFEDF65297AFD5600DAA52D /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +132,7 @@
 		FF145E8C296F384800F345B6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FFFEDF60297AF7BB00DAA52D /* AdminInterfece */,
 				FF145E76296F04E000F345B6 /* AuthView.swift */,
 				FF145E82296F2CB600F345B6 /* MainTabBar.swift */,
 				FF145E88296F36F200F345B6 /* NewsView.swift */,
@@ -162,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				FF145E93296F48C000F345B6 /* CatalogViewModel.swift */,
+				FFFEDF61297AF94E00DAA52D /* AdminOrdersViewModel.swift */,
+				FFFEDF65297AFD5600DAA52D /* OrderViewModel.swift */,
 				FF145EAC29719AB000F345B6 /* MainTabBarViewModel.swift */,
 				FF145E9829704D7300F345B6 /* ProductDitailViewModel.swift */,
 				FF145E9A29706F5500F345B6 /* CartViewModel.swift */,
@@ -177,6 +188,15 @@
 				FF145EB02971A45B00F345B6 /* DatabaseService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		FFFEDF60297AF7BB00DAA52D /* AdminInterfece */ = {
+			isa = PBXGroup;
+			children = (
+				FFFEDF5E297AF7A400DAA52D /* AdminOrdersView.swift */,
+				FFFEDF63297AFD2E00DAA52D /* OrderView.swift */,
+			);
+			path = AdminInterfece;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF145E9D29706FC500F345B6 /* Position.swift in Sources */,
+				FFFEDF64297AFD2E00DAA52D /* OrderView.swift in Sources */,
 				FF145E87296F36C800F345B6 /* CartView.swift in Sources */,
 				FF145E8E296F388700F345B6 /* Product.swift in Sources */,
 				FF145E972970465000F345B6 /* ProductDitailView.swift in Sources */,
@@ -269,14 +290,17 @@
 				FF145E9929704D7300F345B6 /* ProductDitailViewModel.swift in Sources */,
 				FF145E83296F2CB600F345B6 /* MainTabBar.swift in Sources */,
 				FF145EAF2971A2A900F345B6 /* DataUser.swift in Sources */,
+				FFFEDF66297AFD5600DAA52D /* OrderViewModel.swift in Sources */,
 				FF145E77296F04E000F345B6 /* AuthView.swift in Sources */,
 				FFF281E22979B1A900D214F5 /* OrderCell.swift in Sources */,
 				FF145E89296F36F200F345B6 /* NewsView.swift in Sources */,
+				FFFEDF62297AF94E00DAA52D /* AdminOrdersViewModel.swift in Sources */,
 				FF145E75296F04E000F345B6 /* formthoticsApp.swift in Sources */,
 				FFF281E029786ACA00D214F5 /* OrderStatus.swift in Sources */,
 				FF145E90296F3AFD00F345B6 /* ProductCell.swift in Sources */,
 				FF145ED929784EBD00F345B6 /* ProfileViewModel.swift in Sources */,
 				FF145E8B296F372600F345B6 /* ProfileView.swift in Sources */,
+				FFFEDF5F297AF7A400DAA52D /* AdminOrdersView.swift in Sources */,
 				FF145E94296F48C000F345B6 /* CatalogViewModel.swift in Sources */,
 				FF145E85296F362F00F345B6 /* CatalogView.swift in Sources */,
 				FF145EAA297173DC00F345B6 /* AuthService.swift in Sources */,
