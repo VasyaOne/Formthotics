@@ -3,7 +3,7 @@
 Приложение интернет-магазин для врачей занимающиемися установкой стелек и прошедших трехдневный семинар
 
 ## Скрины:
-<img src="https://github.com/VasyaOne/Formthotics/blob/main/Screen/Simulator%20Screen%2001.png" style="width: 150px"> <img src="https://github.com/VasyaOne/Formthotics/blob/main/Screen/Simulator%20Screen%2002.png" style="width: 150px"> <img src="https://github.com/VasyaOne/Formthotics/blob/main/Screen/Simulator%20Screen%2003.png" style="width: 150px"> <img src="https://github.com/VasyaOne/Formthotics/blob/main/Screen/Simulator%20Screen%2004.png" style="width: 150px"> 
+<img src="https://github.com/VasyaOne/Formthotics/blob/main/Screen/Simulator%20Screen%2001.png" style="width: 150px"> <img src="https://github.com/VasyaOne/Formthotics/blob/main/Screen/Simulator%20Screen%2002.png" style="width: 150px"> <img src="https://github.com/VasyaOne/Formthotics/blob/main/Screen/Simulator%20Screen%2003.png" style="width: 150px"> <img src="https://github.com/VasyaOne/Formthotics/blob/main/Screen/Simulator%20Screen%2004.png" style="width: 150px"> <img src="https://github.com/VasyaOne/Formthotics/blob/main/Screen/Simulator%20Screen%2005.png" style="width: 150px"> 
 
 ## Механика:
 Врач регистрируется или ему предоставляют созданный аккаунт после прохождения семинара.
